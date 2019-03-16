@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".FQGCW">
+
+    <include layout="@layout/dilan" />
+
+    <ImageView
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="#33ffff"
+        />
+    <TextView
+        android:id="@+id/next1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="文明锻炼 享受健康"
+        android:layout_below="@+id/top1"
+        android:gravity="right"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="无声广场舞"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/next1"
+        android:gravity="left"
+        android:layout_margin="30dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/tod"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/next1"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fast"
+
+        />
+</RelativeLayout>

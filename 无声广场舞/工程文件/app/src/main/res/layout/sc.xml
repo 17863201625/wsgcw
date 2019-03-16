@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="请输入广场舞名称:"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/et_qr_string"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:textSize="24sp"
+        android:hint="输入文本"/>
+
+    <TextView
+        android:id="@+id/zzz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="请输入播放时间:"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/Year_string"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:maxLines="5"
+            android:textSize="24sp"
+            android:hint="年"/>
+
+        <EditText
+            android:id="@+id/Month_string"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:maxLines="5"
+            android:textSize="24sp"
+            android:hint="月"/>
+
+        <EditText
+            android:id="@+id/Day_string"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:maxLines="5"
+            android:textSize="24sp"
+            android:hint="日"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/Hour_string"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:maxLines="5"
+            android:textSize="24sp"
+            android:hint="时"/>
+
+        <EditText
+            android:id="@+id/Minute_string"
+         android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:maxLines="5"
+            android:textSize="24sp"
+            android:hint="分"/>
+
+        <EditText
+            android:id="@+id/Seconed_string"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:maxLines="5"
+            android:textSize="24sp"
+            android:hint="秒"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_add_qrcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:text="生成二维码" />
+    <ImageView
+        android:id="@+id/iv_qr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+
+    <Button
+        android:id="@+id/result1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="请点此选择歌曲"
+        android:textSize="24sp"
+        android:onClick="setOnClickListenerz"
+     />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/zzzz1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前歌曲为:"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            />
+
+        <ListView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

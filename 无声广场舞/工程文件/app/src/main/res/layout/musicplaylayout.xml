@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MusicPlayActivity">
+
+    <RelativeLayout
+        android:id="@+id/BoFangXinXi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+<TextView
+    android:id="@+id/duilieming"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="40dip"
+  android:textSize="20dp"
+    android:text=""
+    />
+  <TextView
+        android:id="@+id/BoFangShiJian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22dp"
+        android:text="播放进度："
+      android:layout_below="@+id/duilieming"
+
+        />
+   <!-- <TextView
+        android:id="@+id/time"
+        android:layout_below="@+id/BoFangShiJian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="70dp"
+        android:text="00:00"
+        />-->
+
+        <SeekBar
+            android:id="@+id/sb"
+            android:layout_below="@+id/BoFangShiJian"
+            android:layout_width="fill_parent"
+            android:layout_height="15dip"
+            android:layout_marginTop="20dip"
+            android:thumb="@null"
+
+
+            />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/sb"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/music_name"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="27dp"
+        android:text="歌曲名："
+        />
+    <TextView
+        android:id="@+id/resultture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="27dp"
+
+        />
+
+</LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_below="@+id/BoFangXinXi"
+        android:layout_centerInParent="true"
+        android:layout_margin="45dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/play"
+        />
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_below="@+id/play"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/stop"
+        />
+
+</RelativeLayout>

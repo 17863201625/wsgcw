@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">无声广场舞</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="bofangshjian">距离播放时间还有：</string>
+    <string name="music_name">歌曲名：</string>
+    <string name="music_time">准备播放时间</string>
+</resources>

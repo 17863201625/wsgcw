@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <!--android:background="@android:color/white"-->
+    <!--android:orientation="vertical" >-->
+
+    <include layout="@layout/dilan" />
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#33ffff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="无声广场舞"
+            android:textColor="#ffffff"
+            android:gravity="left"
+           android:layout_alignParentBottom="true"
+
+            />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_scan_barcode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="打开相机"
+        android:src="@drawable/scan"
+        android:background="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/please"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="请扫描二维码"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_scan_barcode"
+        />
+
+ <!--   <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <ImageView
+
+            android:id="@+id/BI1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/scan"
+            android:layout_alignParentLeft="true"
+
+
+            />
+
+        <ImageView
+
+            android:id="@+id/BI2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more"
+
+            />
+        <ImageView
+
+            android:id="@+id/BI3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/mp"
+            />
+
+    </RelativeLayout>-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/please">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:text="扫描结果：" />
+
+        <TextView
+            android:id="@+id/tv_scan_result"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

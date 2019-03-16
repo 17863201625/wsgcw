@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bofangshjian"
+        android:layout_alignParentLeft="true"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_below="@+id/top"
+        android:textSize="70dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"/>
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_margin="25dp"
+        android:layout_below="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/music_name"
+
+            />
+        <TextView
+            android:id="@+id/music_namev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toLeftOf="@+id/music_name"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLl"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/music_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/music_time"
+
+            />
+        <TextView
+            android:id="@+id/music_timev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toLeftOf="@+id/music_name"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:textSize="40dp"
+        android:layout_below="@+id/LLl"
+        android:layout_margin="45dp"
+        android:layout_centerInParent="true"
+
+        />
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停"
+        android:textSize="40dp"
+        android:layout_below="@+id/action"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:onClick="onClick"
+        />
+   <!-- <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <ImageView
+
+            android:id="@+id/BI1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+         android:src="@drawable/scan"
+            android:layout_alignParentLeft="true"
+
+            />
+        <ImageView
+
+            android:id="@+id/BI2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/more"
+            android:layout_alignParentRight="true"
+
+            />
+        <ImageView
+
+            android:id="@+id/BI3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

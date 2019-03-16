@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/SMzc"
+        android:layout_margin="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感谢您支持我们的产品，请扫描二维码支持我们"/>
+    <ImageView
+        android:layout_below="@+id/SMzc"
+        android:layout_width="450dp"
+        android:layout_height="400dp"
+        android:src="@drawable/moneypay"
+        android:layout_margin="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
